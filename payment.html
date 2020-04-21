@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Camp Anonymous Payment</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#content" id="hidden">Skip to main content</a>
+            <h1><a href="index.html">Camp Anonymous</a></h1>
+            <nav>
+                <label for="hamburger">&#9776;</label><!--&#9776; is Unicode hamburger char-->
+                <input type="checkbox" id="hamburger"/><!--checkbox will be represented by its label-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <h2>Camp Anonymous Payment</h2>
+            <p>Whatever your budget, however much you care about your child's wellbeing, Camp Anonymous has a plan that will be affordable for you.</p>
+            <p>Please enter your billing information below to reserve your child's seat today! Required fields are marked with an asterisk (*).</p>
+            <div class="columns">
+                <form name="payment" method="post" class="column-one"><!--action="" not included because this course did not cover server-side processing-->
+                    <label for="plan">Plan:</label>
+                        <div class="radio-buttons">
+                            <input type="radio" name="plan" id="plan" value="standard" required="required">Standard (Plenty Dollars)<br>
+                            <input type="radio" name="plan" value="superior" required="required">Superior (Eleventy Dollars)<br>
+                            <input type="radio" name="plan" value="sub-par" required="required">Sub-Par (Eleventeen Dollars)<br>
+                        </div>
+                    <label for="num-kids">*Number of children:</label>
+                    <input type="number" name="num-kids" id="num-kids" value="1" min="1" required="required">
+                    <br>
+                    <label for="name">*Name on card:</label>
+                    <input type="text" name="name" id="name" required="required">
+                    <br>
+                    <label for="cardnum">*Card number:</label>
+                    <input type="text" name="cardnum" id="cardnum" required="required" minlength="15" maxlength="16">
+                    <br>
+                    <label for="cvv">*CVV:</label>
+                    <input type="text" name="cvv" id="cvv" required="required" minlength="3" maxlength="4">
+                    <br>
+                    <label for="ssn">*Social Security number:</label>
+                    <input type="text" name="ssn" id="ssn" required="required" minlength="9" maxlength="9">
+                    <br>
+                    <label for="zip">*ZIP code:</label>
+                    <input type="text" name="zip" id="zip" required="required" minlength="5" maxlength="5">
+                    <br>
+                    <input type="submit" id="submit-button" value="Submit Payment">
+                </form>
+                <aside class="column-three">
+                    <img src="images/creditcards.png" width="300" alt="Logos of major credit/debit card networks">
+                    <br>
+                    Our system may possibly accept any of the major credit/debit card networks.
+            </aside>
+            </div>
+        </main>
+        <footer>
+            &copy; 2020 Camp Anonymous, Inc. &nbsp;
+            <a href="mailto:isaac.weiss@wayne.edu">Email</a> &nbsp; 
+            <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Camp Anonymous</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#content" id="hidden">Skip to main content</a>
+            <h1><a href="index.html">Camp Anonymous</a></h1>
+            <nav>
+                <label for="hamburger">&#9776;</label><!--&#9776; is Unicode hamburger char-->
+                <input type="checkbox" id="hamburger"/><!--checkbox will be represented by its label-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content">
+            <h2>Contact Camp Anonymous</h2>
+            <p>Camp Anonymous is ready to hear your comments, and also to hear (and even potentially answer) your questions. Required fields are marked with an asterisk (*).</p>
+            <form name="contact" method="post"><!--action="" not included because this course did not cover server-side processing-->
+                <label for="name">*Name:</label>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="email">*Email address:</label>
+                <input type="email" name="email" id="email" required="required">
+                <br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" id="phone">
+                <br>
+                <label for="comment">*Comment or question:</label>
+                <textarea name="comment" id="comment" required="required" rows="5"></textarea>
+                <br>
+                <input type="submit" id="submit-button" value="Submit">
+            </form>
+        </main>
+        <footer>
+            &copy; 2020 Camp Anonymous, Inc. &nbsp;
+            <a href="mailto:isaac.weiss@wayne.edu">Email</a> &nbsp; 
+            <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a>
+        </footer>
+    </body>
+</html>

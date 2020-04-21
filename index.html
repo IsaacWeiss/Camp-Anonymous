@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome to Camp Anonymous</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#content" id="hidden">Skip to main content</a>
+            <h1><a href="index.html">Camp Anonymous</a></h1>
+            <nav>
+                <label for="hamburger">&#9776;</label><!--&#9776; is Unicode hamburger char-->
+                <input type="checkbox" id="hamburger"/><!--checkbox will be represented by its label-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="content"></div><!--don't need it's styling here, but still included as jump point for accessibility-->
+            <div id="splash">
+                <h1><br><br><i>Welcome to Camp Anonymous!</i></h1>
+                <p><i>&ldquo;The perfect summer camp for children of all ages&rdquo;</i></p>
+                <p>Located in the sunlit foothills of Sunlit Foothills, Michigan.</p>
+                <h2><br><a href="about.html">Learn More</a></h2>
+            </div>
+        </main>
+        <footer>
+            &copy; 2020 Camp Anonymous, Inc. &nbsp;
+            <a href="mailto:isaac.weiss@wayne.edu">Email</a> &nbsp; 
+            <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a>
+        </footer>
+    </body>
+</html>
