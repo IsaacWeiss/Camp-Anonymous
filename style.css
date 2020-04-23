@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 200px;
     position: relative;
     color: yellowgreen;
     background-image: url(images/header.jpg);
