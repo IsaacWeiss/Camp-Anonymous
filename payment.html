@@ -45,6 +45,28 @@
                     <label for="cardnum">*Card number:</label>
                     <input type="text" name="cardnum" id="cardnum" required="required" minlength="15" maxlength="16">
                     <br>
+                    <label for="month">*Expiration date:</label>
+                        <select id="month" name="month" required="required" size="1">
+                            <option value="" selected="selected">January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        <select id="year" name="year" required="required"  size="1">
+                            <option value="">placeholder</option>
+                            <script>
+                                populateCardYearInput();
+                            </script>
+                        </select>
+                    <br>
                     <label for="cvv">*CVV:</label>
                     <input type="text" name="cvv" id="cvv" required="required" minlength="3" maxlength="4">
                     <br>

@@ -99,7 +99,7 @@ form label {
     padding-right: 10px;
     text-align: right;
 }
-form input, form textarea {
+form input, form textarea, form select {
     margin-bottom: 10px;
 }
 
