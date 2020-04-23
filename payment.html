@@ -4,6 +4,7 @@
         <title>Camp Anonymous Payment</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
     </head>
     <body>
         <header>
@@ -19,16 +20,16 @@
                     <li><a href="packages.html">Packages</a></li>
                     <li><a href="payment.html">Payment</a></li>
                     <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main id="content">
             <h2>Camp Anonymous Payment</h2>
-            <p>Whatever your budget, however much you care about your child's wellbeing, Camp Anonymous has a plan that will be affordable for you.</p>
             <p>Please enter your billing information below to reserve your child's seat today! Required fields are marked with an asterisk (*).</p>
             <div class="columns">
-                <form name="payment" method="post" class="column-one"><!--action="" not included because this course did not cover server-side processing-->
+                <form name="payment" class="column-one" method="post" action="javascript:;" onsubmit="submitPaymentForm()">
                     <label for="plan">Plan:</label>
                         <div class="radio-buttons">
                             <input type="radio" name="plan" id="plan" value="standard" required="required">Standard (Plenty Dollars)<br>
@@ -64,7 +65,7 @@
         </main>
         <footer>
             &copy; 2020 Camp Anonymous, Inc. &nbsp;
-            <a href="mailto:isaac.weiss@wayne.edu">Email</a> &nbsp; 
+            <a href="mailto:isaacgreenbike@gmail.com">Email</a> &nbsp; 
             <a href="https://youtu.be/dQw4w9WgXcQ">Privacy Policy</a>
         </footer>
     </body>

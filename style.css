@@ -73,7 +73,7 @@ nav a:hover {
 footer {
     text-align: center;
     margin: 10px;
-    /* font-size: 100% to encourage finding of Easter egg */
+    font-size: 90%; /* to encourage finding of Easter egg */
 }
 
 table {
