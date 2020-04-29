@@ -1,7 +1,8 @@
 body {
+    min-height: 100vh; /* at least fill browser viewport height */
     margin: 0;
+    position: relative;
     background-image: linear-gradient(135deg, beige, yellowgreen);
-    min-height: 800px;
     background-repeat: no-repeat;
     font-family: Candara, Calibri, sans-serif;
 }
@@ -64,6 +65,9 @@ nav a:hover {
     color: whitesmoke;
 }
 
+main {
+    padding-bottom: 50px; /* for footer */
+}
 #content { /* basically main, but sometimes main is needed for a splash page and needs different styling */
     width: 90%;
     max-width: 1280px;
@@ -71,9 +75,13 @@ nav a:hover {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin: 10px;
+    padding: 15px 0;
     font-size: 90%; /* to encourage finding of Easter egg */
+    background-color: rgba(0, 0, 0, .2); /* semitransparent overlay */
 }
 
 table {
@@ -218,8 +226,8 @@ aside h3 {
         background-color: rgba(0, 0, 0, .5); /* semitransparent overlay */
         line-height: 48px;
         width: 100%;
+        text-indent: 10px;
         margin: 0;
-        margin-left: 10px;
     }
     
     nav {
