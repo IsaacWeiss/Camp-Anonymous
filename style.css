@@ -116,7 +116,7 @@ form input, form textarea, form select {
 }
 
 #splash { /* used on home page */
-    background-image: url(images/home2.jpg);
+    background-image: url(images/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -219,12 +219,12 @@ aside h3 {
 
 @media only screen and (max-width: 768px) {
     header {
-        height: 48px;
+        height: 50px;
     }
     header h1 {
         font-size: 150%;
         background-color: rgba(0, 0, 0, .5); /* semitransparent overlay */
-        line-height: 48px;
+        line-height: 50px;
         width: 100%;
         text-indent: 10px;
         margin: 0;
@@ -254,8 +254,8 @@ aside h3 {
         background-color: black;
         font-size: 200%;
         border-radius: 5px;
-        width: 48px;
-        line-height: 48px;
+        width: 50px;
+        line-height: 50px;
         text-align: center;
         vertical-align: middle;
     }
