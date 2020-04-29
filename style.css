@@ -241,9 +241,9 @@ aside h3 {
     nav li {
         display: block; /* vertical stack instead of horizontal inline */
         border-top: 1px solid white;
-        font-size: 120%;
+        font-size: 130%;
         margin: 0;
-        padding: 5px 0;
+        padding: 10px 0;
         text-align: center;
         width: 100%;
     }
@@ -268,6 +268,9 @@ aside h3 {
         display: none; /* hide when hamburger not checked */
     }
     
+    #splash {
+        font-size: 120%;
+    }
     aside {
         font-size: 100%;
     }
