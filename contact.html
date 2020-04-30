@@ -30,9 +30,9 @@
             <h2>Contact Camp Anonymous</h2>
             <p>Camp Anonymous is ready to hear your comments, and also to hear (and even potentially answer) your questions. Your information will be used in accordance with our privacy policy.</p>
             <p>Required fields are marked with an asterisk (*).</p>
-            <form name="contact" method="post" action="/contact.html" netlify>
+            <form name="contact" method="post" action="/contact.html" onsubmit="submitContactForm()" netlify>
                 <label for="name">*Name:</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" pattern="[a-zA-Z]+\s[a-zA-Z]+" title="Firstname Lastname">
                 <br>
                 <label for="email">*Email address:</label>
                 <input type="email" name="email" id="email" required="required">
@@ -43,7 +43,7 @@
                 <label for="comment">*Comment or question:</label>
                 <textarea name="comment" id="comment" required="required" rows="5"></textarea>
                 <br>
-                <input type="submit" id="submit-button" value="Submit" onclick="submitContactForm()">
+                <input type="submit" id="submit-button" value="Submit">
             </form>
 
         </main>
