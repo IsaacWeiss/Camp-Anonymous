@@ -9,11 +9,11 @@ function submitPaymentForm() {
     let msg1 = "Card declined. Please re-enter your information, or try a different card.";
     let msg2;
     let ssn = document.querySelector("#ssn").value;
-    if (ssn)
-        msg2 = "\n\nThank you for trusting us with your Social Security number.";
+    if (!ssn)
+        msg2 = "It might help to fill out the Social Security number field.";
     else
-        msg2 = "";
-    alert(msg1 + msg2);
+        msg2 = "Thank you for trusting us with your Social Security number, though. It has been discarded, as we don't need it, but that was very brave of you.";
+    alert(msg1 + "\n\n" + msg2);
 }
 
 function populateCardYearInput() {    
