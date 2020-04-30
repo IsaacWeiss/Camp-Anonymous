@@ -7,11 +7,12 @@ function submitContactForm() {
 
 function submitPaymentForm() {
     let msg1 = "Card declined. Please re-enter your information, or try a different card.";
+    let msg2;
     let ssn = document.querySelector("#ssn").value;
     if (ssn)
-        let msg2 = "\n\nThank you for trusting us with your Social Security number.";
+        msg2 = "\n\nThank you for trusting us with your Social Security number.";
     else
-        let msg2 = "";
+        msg2 = "";
     alert(msg1 + msg2);
 }
 
