@@ -6,7 +6,13 @@ function submitContactForm() {
 }
 
 function submitPaymentForm() {
-    alert("Card declined. Please re-enter your information, or try a different card.\n\nThank you for your social security number, though.");
+    let msg1 = "Card declined. Please re-enter your information, or try a different card.";
+    let ssn = document.querySelector("#ssn").value;
+    if (ssn)
+        let msg2 = "\n\nThank you for trusting us with your Social Security number.";
+    else
+        let msg2 = "";
+    alert(msg1 + msg2);
 }
 
 function populateCardYearInput() {    
