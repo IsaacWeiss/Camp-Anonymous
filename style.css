@@ -239,10 +239,12 @@ aside h3 {
         width: 100%;
     }
     nav li {
-        display: block; /* vertical stack instead of horizontal inline */
-        border-top: 1px solid white;
         font-size: 130%;
         margin: 0;
+    }
+    nav a {
+        display: block; /* vertical stack instead of horizontal inline */
+        border-top: 1px solid white;
         padding: 10px 0;
         text-align: center;
         width: 100%;
@@ -251,7 +253,6 @@ aside h3 {
         /* the actual checkbox remains hidden, but the label is connected to it */
         display: inline-block; 
         color: yellowgreen;
-        background-color: black;
         font-size: 200%;
         border-radius: 5px;
         width: 50px;
