@@ -2,7 +2,7 @@
 
 function submitContactForm() {
     let email = document.querySelector("#email").value;
-    alert("Your comment has been submitted. A response will never be sent to " + email + ".");
+    alert("Your comment has been submitted. A response will probably never be sent to " + email + ".");
 }
 
 function submitPaymentForm() {
