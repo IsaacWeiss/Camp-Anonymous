@@ -116,7 +116,7 @@ form input, form textarea, form select {
 }
 
 #splash { /* used on home page */
-    background-image: url(images/home.jpg);
+    background-image: url(images/splash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
